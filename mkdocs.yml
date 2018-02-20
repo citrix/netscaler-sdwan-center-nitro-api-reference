@@ -1,0 +1,34 @@
+site_name: Citrix NetScaler SD-WAN Center 10.0 NITRO API Documentation
+site_description: Citrix NetScaler SD-WAN Center 10.0 NITRO API Documentation
+theme_dir: citrix-sdk
+markdown_extensions:
+  - admonition
+  - codehilite
+  -  toc:
+      anchorlink: true
+
+pages:
+ - Getting Started Guide: index.md
+ - Configuration:
+   - login: login.md
+   - regions: regions.md
+ - Reports:
+   - sites: sites.md
+   - services: services.md
+   - virtual_paths: virtual_paths.md
+   - paths: paths.md
+   - applications: applications.md
+   - hdx: hdx.md
+   - wan_links: wan_links.md
+   - mpls_queues: mpls_queues.md
+   - gre_tunnels: gre_tunnels.md
+   - ipsec_tunnels: ipsec_tunnels.md
+   - classes: classes.md
+   - mos_scores: mos_scores.md
+   - ethernet_interfaces: ethernet_interfaces.md
+   - events: events.md
+   - top_application_families: top_application_families.md
+   - top_sites: top_sites.md
+ - Custom Objects:
+   - meta_data: meta_data.md
+ - Error Messages: error-messages.md
