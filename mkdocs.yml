@@ -1,5 +1,5 @@
-site_name: Citrix NetScaler SD-WAN Center 10.0 NITRO API Documentation
-site_description: Citrix NetScaler SD-WAN Center 10.0 NITRO API Documentation
+site_name: Citrix NetScaler SD-WAN Center 11.0 NITRO API Documentation
+site_description: Citrix NetScaler SD-WAN Center 11.0 NITRO API Documentation
 site_title: Developer Docs
 
 # Copyright
@@ -57,25 +57,138 @@ markdown_extensions:
 nav:
  - Getting Started Guide: index.md
  - Configuration:
-   - login: login.md
-   - regions: regions.md
+   - collector_configuration: config/collector_configuration.md
+   - discovery_settings: config/discovery_settings.md
+   - enable_polling: config/enable_polling.md
+   - inventory_status: config/inventory_status.md
+   - login: config/login.md
+   - regions: config/regions.md
+   - set_collector_ipaddress: config/set_collector_ipaddress.md
+   - ssl_certificate: config/ssl_certificate.md
+ - Configuration Editor:
+   - app_qoe: config_editor/app_qoe.md
+   - app_qoe_profile: config_editor/app_qoe_profile.md
+   - application_objects: config_editor/application_objects.md
+   - application_qos: config_editor/application_qos.md
+   - application_route: config_editor/application_route.md
+   - autopath_groups: config_editor/autopath_groups.md
+   - bgp_export_filters: config_editor/bgp_export_filters.md
+   - bgp_import_filters: config_editor/bgp_import_filters.md
+   - bgp_neighbor: config_editor/bgp_neighbor.md
+   - bgp_policy: config_editor/bgp_policy.md
+   - bgp_properties: config_editor/bgp_properties.md
+   - centralized_licensing_global: config_editor/centralized_licensing_global.md
+   - centralized_licensing_site: config_editor/centralized_licensing_site.md
+   - community_string_list: config_editor/community_string_list.md
+   - config_editor_classes: config_editor/config_editor_classes.md
+   - config_editor_rules: config_editor/config_editor_rules.md
+   - connections_application_settings: config_editor/connections_application_settings.md
+   - connections_office_365_breakout_policy: config_editor/connections_office_365_breakout_policy.md
+   - dns_proxy: config_editor/dns_proxy.md
+   - dns_service: config_editor/dns_service.md
+   - dns_transparent_forwarder: config_editor/dns_transparent_forwarder.md
+   - domain_name_based_applications: config_editor/domain_name_based_applications.md
+   - dynamic_virtual_path_default_set: config_editor/dynamic_virtual_path_default_set.md
+   - dynamic_virtual_path_default_set_advanced_settings: config_editor/dynamic_virtual_path_default_set_advanced_settings.md
+   - dynamic_virtual_path_default_set_application_qos: config_editor/dynamic_virtual_path_default_set_application_qos.md
+   - dynamic_virtual_path_default_set_bulk_classes: config_editor/dynamic_virtual_path_default_set_bulk_classes.md
+   - dynamic_virtual_path_default_set_interactive_classes: config_editor/dynamic_virtual_path_default_set_interactive_classes.md
+   - dynamic_virtual_path_default_set_ipsec_properties: config_editor/dynamic_virtual_path_default_set_ipsec_properties.md
+   - dynamic_virtual_path_default_set_realtime_classes: config_editor/dynamic_virtual_path_default_set_realtime_classes.md
+   - dynamic_virtual_path_default_set_rules: config_editor/dynamic_virtual_path_default_set_rules.md
+   - dynamic_virtual_path_provisioning: config_editor/dynamic_virtual_path_provisioning.md
+   - dynamic_virtual_paths: config_editor/dynamic_virtual_paths.md
+   - firewall: config_editor/firewall.md
+   - firewall_destination_policy_delete: config_editor/firewall_destination_policy_delete.md
+   - firewall_dynamic_nat_policy_delete: config_editor/firewall_dynamic_nat_policy_delete.md
+   - firewall_local_policy_delete: config_editor/firewall_local_policy_delete.md
+   - firewall_policy_template: config_editor/firewall_policy_template.md
+   - firewall_policy_template_delete: config_editor/firewall_policy_template_delete.md
+   - firewall_settings_delete: config_editor/firewall_settings_delete.md
+   - firewall_static_nat_policy_delete: config_editor/firewall_static_nat_policy_delete.md
+   - firewall_zones: config_editor/firewall_zones.md
+   - global_application_settings: config_editor/global_application_settings.md
+   - global_network_settings: config_editor/global_network_settings.md
+   - ha_appliance: config_editor/ha_appliance.md
+   - ha_service: config_editor/ha_service.md
+   - interface_groups: config_editor/interface_groups.md
+   - internet_service: config_editor/internet_service.md
+   - internet_service_rules: config_editor/internet_service_rules.md
+   - internet_service_wan_links: config_editor/internet_service_wan_links.md
+   - intranet_service: config_editor/intranet_service.md
+   - intranet_service_rules: config_editor/intranet_service_rules.md
+   - intranet_services_wan_links: config_editor/intranet_services_wan_links.md
+   - ipsec_tunnel: config_editor/ipsec_tunnel.md
+   - mpls_queue: config_editor/mpls_queue.md
+   - office_365_breakout_policy: config_editor/office_365_breakout_policy.md
+   - ospf_area: config_editor/ospf_area.md
+   - ospf_area_virtual_interface_delete: config_editor/ospf_area_virtual_interface_delete.md
+   - ospf_export_filters: config_editor/ospf_export_filters.md
+   - ospf_import_filters: config_editor/ospf_import_filters.md
+   - ospf_properties: config_editor/ospf_properties.md
+   - panw_branch_maps: config_editor/panw_branch_maps.md
+   - path: config_editor/path.md
+   - provisioning_groups: config_editor/provisioning_groups.md
+   - proxy_auto_config_file_settings: config_editor/proxy_auto_config_file_settings.md
+   - region: config_editor/region.md
+   - routes: config_editor/routes.md
+   - routing_domain: config_editor/routing_domain.md
+   - rule_groups: config_editor/rule_groups.md
+   - saas_gateway_application_object_delete: config_editor/saas_gateway_application_object_delete.md
+   - saas_gateway_service: config_editor/saas_gateway_service.md
+   - saas_gateway_wan_link_usage_delete: config_editor/saas_gateway_wan_link_usage_delete.md
+   - service_provider: config_editor/service_provider.md
+   - service_provisioning: config_editor/service_provisioning.md
+   - site: config_editor/site.md
+   - site_dns_service: config_editor/site_dns_service.md
+   - site_proxy_auto_config_file_settings: config_editor/site_proxy_auto_config_file_settings.md
+   - site_routing_domain: config_editor/site_routing_domain.md
+   - virtual_ip_addresses: config_editor/virtual_ip_addresses.md
+   - virtual_path_default_set: config_editor/virtual_path_default_set.md
+   - virtual_path_default_set_advanced_settings: config_editor/virtual_path_default_set_advanced_settings.md
+   - virtual_path_default_set_application_qos: config_editor/virtual_path_default_set_application_qos.md
+   - virtual_path_default_set_bulk_classes: config_editor/virtual_path_default_set_bulk_classes.md
+   - virtual_path_default_set_interactive_classes: config_editor/virtual_path_default_set_interactive_classes.md
+   - virtual_path_default_set_ipsec_properties: config_editor/virtual_path_default_set_ipsec_properties.md
+   - virtual_path_default_set_realtime_classes: config_editor/virtual_path_default_set_realtime_classes.md
+   - virtual_path_default_set_rules: config_editor/virtual_path_default_set_rules.md
+   - virtual_path_wan_link_mpls_usage_delete: config_editor/virtual_path_wan_link_mpls_usage_delete.md
+   - virtual_path_wan_links: config_editor/virtual_path_wan_links.md
+   - virtualpaths: config_editor/virtualpaths.md
+   - wan_branch_maps: config_editor/wan_branch_maps.md
+   - wan_link: config_editor/wan_link.md
+   - wan_links_standby_mode_internal: config_editor/wan_links_standby_mode_internal.md
+   - wan_optimization_features: config_editor/wan_optimization_features.md
+   - wan_optimization_tuning_settings: config_editor/wan_optimization_tuning_settings.md
+   - wan_to_wan_forwardi: config_editor/wan_to_wan_forwarding.
+ - Fault:
+   - event_viewer: fault/event_viewer.md
+ - License:
+   - file_management: license/file_management.md
+   - license_details: license/license_details.md
+   - license_server_host_id: license/license_server_host_id.md
+   - network_summary: license/network_summary.md 
+ - Monitoring:
+   - object_and_properties: monitoring/object_and_properties.md
  - Reports:
-   - sites: sites.md
-   - services: services.md
-   - virtual_paths: virtual_paths.md
-   - paths: paths.md
-   - applications: applications.md
-   - hdx: hdx.md
-   - wan_links: wan_links.md
-   - mpls_queues: mpls_queues.md
-   - gre_tunnels: gre_tunnels.md
-   - ipsec_tunnels: ipsec_tunnels.md
-   - classes: classes.md
-   - mos_scores: mos_scores.md
-   - ethernet_interfaces: ethernet_interfaces.md
-   - events: events.md
-   - top_application_families: top_application_families.md
-   - top_sites: top_sites.md
- - Custom Objects:
-   - meta_data: meta_data.md
- - Error Messages: error-messages.md
+   - application_qoe: reports/application_qoe.md
+   - applications: reports/applications.md
+   - classes: reports/classes.md
+   - ethernet_interfaces: reports/ethernet_interfaces.md
+   - events: reports/events.md
+   - gre_tunnels: reports/gre_tunnels.md
+   - hdx: reports/hdx.md
+   - hdx_summary: reports/hdx_summary.md
+   - ipsec_tunnel: reports/ipsec_tunnel.md
+   - mos_scores: reports/mos_scores.md
+   - mpls_queues: reports/mpls_queues.md
+   - paths: reports/paths.md
+   - sates: reports/sates.md
+   - services: reports/services.md
+   - sites: reports/sites.md
+   - top_application_families: reports/top_application_families.md
+   - top_sites: reports/top_sites.md
+   - virtual_paths: reports/virtual_paths.md
+   - wan_links: reports/wan_links.md
+ - System:
+   - ntp_servers: system/ntp_servers.md
